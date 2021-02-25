@@ -1,7 +1,8 @@
 class Point3D:
-    x=1
-    y=2
-    z=3
+    x = 1
+    y = 2
+    z = 3
+
 
 pt1 = Point3D()
 pt2 = Point3D()
@@ -36,4 +37,8 @@ print(hasattr(pt1, 'z'), hasattr(pt2, 'z'), hasattr(pt3, 'z'))
 setattr(pt3, 'x', 111)
 Point3D.x = 1984
 
-print(getattr(pt1, 'x'), getattr(pt2, 'x'), getattr(pt3, 'x'), getattr(Point3D, 'x'))
+print(
+    getattr(pt1, 'x'),
+    getattr(pt2, 'x'),
+    getattr(pt3, 'x'),
+    getattr(Point3D, 'x'))
